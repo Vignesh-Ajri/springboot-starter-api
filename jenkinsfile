@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = "vigneshajri2003/javamaven"
+        IMAGE_NAME = "vigneshajri2003/springboot-starter-api"
     }
 
     stages {
@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/SpicyTechie/java_test1.git'
+                    url: 'https://github.com/Vignesh-Ajri/springboot-starter-api.git'
             }
         }
 
